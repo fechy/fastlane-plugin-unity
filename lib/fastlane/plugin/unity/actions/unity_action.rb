@@ -104,7 +104,7 @@ module Fastlane
                              default_value: false,
                                  is_string: false),
           
-          FastlaneCore::ConfigItem.new(key: :background,
+          FastlaneCore::ConfigItem.new(key: :logfile,
                                   env_name: "FL_UNITY_LOGFILE",
                                description: "Where should the log be printed",
                              default_value: "-",
