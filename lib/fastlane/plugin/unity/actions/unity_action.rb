@@ -13,7 +13,7 @@ module Fastlane
         build_cmd << " -executeMethod \"#{params[:execute_method]}\"" unless params[:execute_method].nil?
         build_cmd << " -username \"#{params[:username]}\"" unless params[:username].nil?
         build_cmd << " -password \"#{params[:password]}\"" unless params[:password].nil?
-        build_cmd << " -logfile"
+        build_cmd << " -logfile \"#{params[:logfile]}\"" unless params[:logfile].nil?
 
         # Must be the last option
         build_cmd << " &" if params[:background]
