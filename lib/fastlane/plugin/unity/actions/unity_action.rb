@@ -102,7 +102,7 @@ module Fastlane
                                   env_name: "FL_UNITY_BACKGROUND",
                                description: "Should run command in background (adding &)",
                              default_value: false,
-                                 is_string: false)
+                                 is_string: false),
           
           FastlaneCore::ConfigItem.new(key: :background,
                                   env_name: "FL_UNITY_LOGFILE",
